@@ -1,0 +1,60 @@
+@import "../base.less";
+
+@width: 814px;
+
+.ms_project {
+    margin: 0px !important;
+     >div { .inline; }
+
+     .text {  
+        margin: 0px 55px 0px 55px;
+        div
+        {
+            width: 50%;
+            vertical-align: top;
+            padding: 0px 0px 0px 0px;
+            .inline;
+            p { 
+                padding-right: 30px;
+            }
+        }
+    }
+
+    .view-port {
+		margin-top: 20px;
+        width: 814px;
+        height: 516px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        .shadow(5px, 5px, 20px, -5px, @background-underscore); 
+        
+        .slider {
+            position: absolute;
+            left: 0px;
+            width: @width * 20;
+             .animate(left, 0.5s,ease-in-out);
+             
+            img { 
+                cursor: pointer;
+                width: @width; 
+            }
+        }
+    }
+
+
+    .prev, .next {
+        font-family:"Arial",Gadget,sans-serif;
+        color: @font-color2;
+        &:hover {color: @font-color3;}
+        font-size: 27px;
+        vertical-align: top;
+        margin-top: 250px;
+        width: 50px;
+        cursor: pointer;
+        text-align: center;
+		&:hover {
+			.scale(1.05);
+		}
+    }
+}

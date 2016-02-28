@@ -1,0 +1,58 @@
+@import "../base.less";
+
+.ms_projects {
+	margin: 0px 40px 0px 40px !important;
+    h3, p {
+        text-align: left;
+        padding: 0px 21px 0px 8px;
+     }
+
+    .scope, .row
+    {
+        padding: 0px 3px 0px 3px;
+        div {
+            display: inline-block;
+            zoom: 1;
+            *display: inline;
+            vertical-align: top;
+            width: 33%;
+        }
+
+        p {
+          margin: 0px;
+        }
+    }
+
+    .scope {
+        border: solid @font-color2;
+        border-width: 1px 0px 1px 0px;
+
+        div {
+            width: 33%;
+        }
+    }
+    .row
+    {
+        >div
+        {
+            padding-top: 23px;
+            text-align: center;
+
+
+            border-radius: 10px;
+            cursor: pointer;
+
+			img {.animate(all, 100ms, ease-in-out);}
+
+            &:hover { 
+				img {.shadow(1px, 1px, 20px, -5px, @background-underscore); }
+			}
+
+            img {
+				border-radius: 5px;
+                .shadow(4px,4px,18px,-6px,@background-underscore); 
+				
+            }
+        }
+    }
+}

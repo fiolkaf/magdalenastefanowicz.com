@@ -1,0 +1,67 @@
+@font-color: #9B9B9B;
+@font-color2: #D1D1D1;
+@font-color3: #B1B1B1;
+@font-color4: #FF0000;
+
+@background-underscore: #666666;
+@background-color: #F5F5F5;
+
+.scale(@prop)
+{
+	-moz-transform: scale(@prop);
+	-webkit-transform: scale(@prop) ;
+	-o-transform: scale(@prop);
+	-ms-transform: scale(@prop);
+	transform: scale(@prop);
+}
+
+.animate(@property, @delay, @easing) {
+    -webkit-transition: @property @delay @easing;
+    -moz-transition: @property @delay @easing;
+    -o-transition: @property @delay @easing;
+    -ms-transition: @property @delay @easing;
+    transition: @property @delay @easing;
+}
+
+.shadow(@x, @y, @blur, @spread, @color) {
+    box-shadow: @x @y @blur @spread @color;
+    -webkit-box-shadow: @x @y @blur @spread @color;
+   -moz-box-shadow: @x @y @blur @spread @color;
+}
+
+.inline {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+p, ul {
+    font-size: 11px;
+}
+
+h2, h3 {
+	font-weight: 100;
+}
+
+h2 { 
+    font-size: 16px;
+}
+
+h3 { 
+    font-size: 14px;
+    color: @font-color3; 
+}
+
+a {
+    .bold;
+    font-size: 11px;
+    color:@font-color4;
+    text-decoration:none;
+    &:hover {
+        color:@font-color;
+    }
+}
