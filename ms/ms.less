@@ -5,14 +5,14 @@ html {
 }
 
 body {
-    font-family:  "HelveticaNeueUltraLight", "HelveticaNeue-Ultra-Light", "Helvetica Neue Ultra Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Arial", sans-serif;
+    font-family: "Helvetica", "Swis721 Bt", "HelveticaNeueLight", "HelveticaNeue-Ultra-Light", "Helvetica Neue Ultra Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Arial", sans-serif;
   font-weight: 100;
     background-color: @background-color;
     color: @font-color;
     height: 100%;
     padding: 0;
     margin: 0;
-  line-height: 1em;
+    line-height: 1.2em;
     overflow-y: scroll;
 
   .main
@@ -26,19 +26,32 @@ body {
         >div { margin: 0px 50px 0px 50px; }
 
         .top {
-            padding: 20px 0px 45px 0px;
+            padding: 15px 0px 15px 0px;
+            .h1 {
+              padding-top: 10px;
+              font-size: 24px;
+              font-weight: bold;
+            }
+            .h2 {
+              margin-top: 15px;
+              font-size: 22px;
+            }
+            .h3 {
+              margin-top: 5px;
+              font-size: 14px;
+            }
+            .main-image:hover{
+              opacity: 0.5;
+            }
             img {
         margin: 10px 0px 10px 0px; cursor: pointer;
       }
-
             .menu {
-                margin-top: -30px;
-
                 >div {
                     float: right;
-                    font-size: 13px;
+                    font-size: 14px;
                     list-style: none;
-                    padding: 0px 25px 0px 25px;
+                    padding: 0px 20px 0px 20px;
                     text-transform: uppercase;
                     cursor: pointer;
                     color: @font-color;

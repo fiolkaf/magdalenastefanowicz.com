@@ -2,20 +2,20 @@
 
 .ms_projects {
 	margin: 0px 40px 0px 40px !important;
-    h3, p {
+    h2, p {
         text-align: left;
-        padding: 0px 21px 0px 8px;
+        padding: 0px 11px 0px 1px;
      }
 
-    .scope, .row
+    .row
     {
-        padding: 0px 3px 0px 3px;
+        padding: 0px 0px 0px 17px;
         div {
             display: inline-block;
             zoom: 1;
             *display: inline;
             vertical-align: top;
-            width: 33%;
+            width: 33.3%;
         }
 
         p {
@@ -23,20 +23,12 @@
         }
     }
 
-    .scope {
-        border: solid @font-color2;
-        border-width: 1px 0px 1px 0px;
-
-        div {
-            width: 33%;
-        }
-    }
     .row
     {
         >div
         {
-            padding-top: 23px;
-            text-align: center;
+            padding-top: 5px;
+            text-align: left;
 
 
             border-radius: 10px;
@@ -44,14 +36,22 @@
 
 			img {.animate(all, 100ms, ease-in-out);}
 
-            &:hover { 
-				img {.shadow(1px, 1px, 20px, -5px, @background-underscore); }
+            &:hover {
+				img {.shadow(1px, 1px, 20px, -5px, @background-underscore);
+					opacity: 0.5;}
 			}
-
+				img:hover::before{
+					content: "text";
+					position: relative;
+					width: 100px;
+					height: 5px;
+					display: inline-block;
+					text-align: center;
+				}
             img {
 				border-radius: 5px;
-                .shadow(4px,4px,18px,-6px,@background-underscore); 
-				
+                .shadow(4px,4px,18px,-6px,@background-underscore);
+
             }
         }
     }
