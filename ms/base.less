@@ -1,7 +1,7 @@
-@font-color: #9B9B9B;
-@font-color2: #D1D1D1;
-@font-color3: #B1B1B1;
-@font-color4: #FF0000;
+@font-color: #333333;
+@font-color2: #333333;
+@font-color3: #333333;
+@font-color4: #333333;
 
 @background-underscore: #666666;
 @background-color: #F5F5F5;
@@ -40,20 +40,28 @@
 }
 
 p, ul {
-    font-size: 11px;
+    font-size: 12px;
 }
 
-h2, h3 {
+h2, h3, h4 {
 	font-weight: 100;
 }
 
-h2 { 
-    font-size: 16px;
+h2 {
+    font-size: 11px;
+		line-height: 1.2em;
 }
 
-h3 { 
-    font-size: 14px;
-    color: @font-color3; 
+h3 {
+    font-size: 22px;
+    color: @font-color3;
+}
+
+h4 {
+    font-size: 18px;
+    color: @font-color3;
+		-webkit-margin-after: 0.1em;
+		font-weight: bold;
 }
 
 a {
